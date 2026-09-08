@@ -67,15 +67,21 @@
       gap: 11px;
       text-decoration: none;
       color: var(--text);
-      font-weight: 800;
-      letter-spacing: .02em;
     }
 
-    .brand img {
+    .brand-shield {
       width: 38px;
       height: 47px;
       object-fit: contain;
       filter: drop-shadow(0 6px 12px rgba(0,0,0,.35));
+      flex: 0 0 auto;
+    }
+
+    .brand-wordmark {
+      width: 154px;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,.28));
     }
 
     .nav-note {
@@ -264,6 +270,7 @@
       .card { min-height: 178px; }
       .hero { padding-top: 44px; }
       .nav-note { display: none; }
+      .brand-wordmark { width: 132px; }
     }
   </style>
 </head>
@@ -272,8 +279,8 @@
   <header>
     <div class="wrap nav">
       <a class="brand" href="./" aria-label="Zbrojnice – domů">
-        <img src="assets/zbrojnice_logo_shield.png" alt="">
-        <span>ZBROJNICE</span>
+        <img class="brand-shield" src="assets/zbrojnice_logo_shield.png" alt="">
+        <img class="brand-wordmark" src="assets/zbrojnice_wordmark_only.png" alt="Zbrojnice">
       </a>
       <div class="nav-note">Oficiální web aplikace</div>
     </div>
@@ -282,7 +289,7 @@
   <main>
     <section class="hero wrap">
       <img class="shield" src="assets/zbrojnice_logo_shield.png" alt="Logo Zbrojnice">
-      <img class="wordmark" src="assets/zbrojnice_wordmark.png" alt="Zbrojnice">
+      <img class="wordmark" src="assets/zbrojnice_wordmark_only.png" alt="Zbrojnice">
       <p class="tagline">Vaše jednotka. Na jednom místě.</p>
 
       <p class="intro">

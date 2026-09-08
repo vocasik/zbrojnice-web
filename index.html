@@ -77,10 +77,19 @@
       flex: 0 0 auto;
     }
 
+    .brand-wordmark-wrap {
+      width: 164px;
+      height: 39px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-start;
+    }
+
     .brand-wordmark {
-      width: 154px;
+      width: 164px;
       height: auto;
       display: block;
+      flex: 0 0 auto;
       filter: drop-shadow(0 6px 12px rgba(0,0,0,.28));
     }
 
@@ -104,18 +113,10 @@
 
     .wordmark {
       display: block;
-      width: min(390px, 78vw);
+      width: min(560px, 88vw);
       height: auto;
-      margin: 20px auto 3px;
+      margin: 22px auto 0;
       filter: drop-shadow(0 8px 20px rgba(0,0,0,.35));
-    }
-
-    .tagline {
-      margin: 5px auto 0;
-      color: #d5d9dd;
-      font-size: clamp(18px, 2.5vw, 24px);
-      font-weight: 650;
-      letter-spacing: .01em;
     }
 
     .intro {
@@ -270,7 +271,11 @@
       .card { min-height: 178px; }
       .hero { padding-top: 44px; }
       .nav-note { display: none; }
-      .brand-wordmark { width: 132px; }
+      .brand-wordmark-wrap {
+        width: 140px;
+        height: 33px;
+      }
+      .brand-wordmark { width: 140px; }
     }
   </style>
 </head>
@@ -280,7 +285,9 @@
     <div class="wrap nav">
       <a class="brand" href="./" aria-label="Zbrojnice – domů">
         <img class="brand-shield" src="assets/zbrojnice_logo_shield.png" alt="">
-        <img class="brand-wordmark" src="assets/zbrojnice_wordmark_only.png" alt="Zbrojnice">
+        <span class="brand-wordmark-wrap">
+          <img class="brand-wordmark" src="assets/zbrojnice_wordmark.png" alt="Zbrojnice">
+        </span>
       </a>
       <div class="nav-note">Oficiální web aplikace</div>
     </div>
@@ -289,8 +296,8 @@
   <main>
     <section class="hero wrap">
       <img class="shield" src="assets/zbrojnice_logo_shield.png" alt="Logo Zbrojnice">
-      <img class="wordmark" src="assets/zbrojnice_wordmark_only.png" alt="Zbrojnice">
-      <p class="tagline">Vaše jednotka. Na jednom místě.</p>
+      <img class="wordmark" src="assets/zbrojnice_wordmark.png"
+           alt="Zbrojnice – Vaše jednotka. Na jednom místě.">
 
       <p class="intro">
         Zbrojnice pomáhá hasičským jednotkám přehledně spravovat členy,
